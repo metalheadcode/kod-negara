@@ -9,9 +9,11 @@
  * @param {object} replacements - key/value object with the keys to be replaced by the corresponding values
  */
 
-export default supplant = (stringVal, replacements) => {
+const supplant = (stringVal, replacements) => {
   return stringVal.replace(/{([^{}]*)}/g, function (a, b) {
     let r = replacements[b];
     return typeof r === "string" || typeof r === "number" ? r : a;
   });
 };
+
+export default supplant;
