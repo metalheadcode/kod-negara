@@ -14,6 +14,10 @@ const all = () => {
   return countriesData;
 };
 
+const countryArray = () => {
+  return countriesData.map((item) => `${item.countryNameEn} (${countryCode})`);
+};
+
 /**
  * Filters the list of countries and returns those matching with the filter criteria
  * @param {String} countryProperty - The property to use in the filter. Must be any of the country properties (countryCode, currencyCode, etc)
@@ -101,4 +105,12 @@ const customList = (
   return finalObject;
 };
 
-export default { utils, all, filter, findOne, customArray, customList };
+export default {
+  utils,
+  countryArray,
+  all,
+  filter,
+  findOne,
+  customArray,
+  customList,
+};
