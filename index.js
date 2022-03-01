@@ -15,7 +15,9 @@ const all = () => {
 };
 
 const countryArray = () => {
-  return countriesData.map((item) => `${item.countryNameEn} (${countryCode})`);
+  return countriesData.map(
+    (item) => `${item.countryNameEn} (${item.countryCode})`
+  );
 };
 
 /**
