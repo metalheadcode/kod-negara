@@ -1,6 +1,6 @@
-import { supplant } from "./utils/supplant";
-import { groupBy } from "./utils/groupBy";
-import { countriesData } from "./countriesData";
+import supplant from "./utils/supplant";
+import groupBy from "./utils/groupBy";
+import countriesData from "./countriesData";
 
 /**
  * Returns some module utils

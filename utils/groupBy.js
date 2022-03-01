@@ -8,7 +8,7 @@
  * @param {function} transform - A transformation to apply to the grouped value
  */
 
-export const groupBy = (key, array, transform) => {
+export default groupBy = (key, array, transform) => {
   return array.reduce((objectsByKeyValue, obj) => {
     const value = obj[key];
     let val = obj;
