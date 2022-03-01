@@ -40,6 +40,8 @@ type CustomArraySettings = {
 
 export function all(): CountryData[];
 
+export function countryArray(): CountryData[];
+
 export function filter(
   countryProperty: CountryProperty,
   value: string
