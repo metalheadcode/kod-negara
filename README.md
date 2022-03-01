@@ -20,7 +20,7 @@ Module with list of codes per country, which includes:
 ## Install the NPM module
 
 ```bash
-    npm install --save country-codes-list
+    npm install --save kod-negara
 ```
 
 ## Usage
@@ -48,9 +48,9 @@ The possible values for the object key and the placeholders are:
 #### Example
 
 ```js
-const countryCodes = require("country-codes-list");
+import kodNegara from "kod-negara";
 
-const myCountryCodesObject = countryCodes.customList(
+const myCountryCodesObject = kodNegara.customList(
   "countryCode",
   "[{countryCode}] {countryNameEn}: +{countryCallingCode}"
 );
