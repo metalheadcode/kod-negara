@@ -1,0 +1,33 @@
+{
+  "name": "kod-negara",
+  "version": "1.0.0",
+  "description": "List of codes per country (languages, calling codes, currency codes, etc)",
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metalheadcode/kod-negara.git"
+  },
+  "keywords": [
+    "country",
+    "code",
+    "currency",
+    "countries",
+    "kod",
+    "negara",
+    "list",
+    "language",
+    "per",
+    "calling",
+    "phone"
+  ],
+  "author": "metalheadcoder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metalheadcode/kod-negara/issues"
+  },
+  "homepage": "https://github.com/metalheadcode/kod-negara#readme"
+}
