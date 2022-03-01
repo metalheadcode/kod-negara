@@ -10,8 +10,8 @@ function groupBy(key, array, transformValue) {
   }, {});
 }
 
-const countryCodes = require("./index");
-const tinTypes = countryCodes.customArray(
+const kodNegara = require("./index");
+const tinTypes = kodNegara.customArray(
   { value: "{tinType}", name: "{countryNameEn}" },
   {
     filter: (countryData) => countryData.tinType !== "",
@@ -23,7 +23,7 @@ const finalTinTypes = {};
 console.log(
   "tinTypes",
   JSON.stringify(
-    countryCodes.utils.groupBy("value", tinTypes, (tinType) => tinType.name),
+    kodNegara.utils.groupBy("value", tinTypes, (tinType) => tinType.name),
     null,
     2
   )

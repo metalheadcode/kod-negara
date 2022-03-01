@@ -5,12 +5,12 @@ import { countriesData } from "./countriesData";
 /**
  * Returns some module utils
  */
-export const utils = { groupBy: groupBy };
+const utils = { groupBy: groupBy };
 
 /**
  * Returns the list with all the countries data
  */
-export const all = () => {
+const all = () => {
   return countriesData;
 };
 
@@ -19,7 +19,7 @@ export const all = () => {
  * @param {String} countryProperty - The property to use in the filter. Must be any of the country properties (countryCode, currencyCode, etc)
  * @param {String} value - The value to use in the filter
  */
-export const filter = (countryProperty, value) => {
+const filter = (countryProperty, value) => {
   return countriesData.filter(
     (countryData) => countryData[countryProperty] === value
   );
@@ -30,7 +30,7 @@ export const filter = (countryProperty, value) => {
  * @param {String} countryProperty - The property to use in the search. Must be any of the country properties (countryCode, currencyCode, etc)
  * @param {String} value - The value to use in the filter
  */
-export const findOne = (countryProperty, value) => {
+const findOne = (countryProperty, value) => {
   return countriesData.find(
     (countryData) => countryData[countryProperty] === value
   );
@@ -40,7 +40,7 @@ export const findOne = (countryProperty, value) => {
  * Returns a collection with fields mapped as requested
  * @param {*} fields - Map of fields and placeholders
  */
-export const customArray = (
+const customArray = (
   fields = {
     name: "{countryNameEn} ({countryCode})",
     value: "{countryCode}",
@@ -83,7 +83,7 @@ export const customArray = (
  * @param {*} key - Key used to construct the object to return
  * @param {*} label - Placeholder like string, with all the fields that you want to use
  */
-export const customList = (
+const customList = (
   key = "countryCode",
   label = "{countryNameEn} ({countryCode})",
   { filter } = {}
@@ -100,3 +100,5 @@ export const customList = (
 
   return finalObject;
 };
+
+export default { utils, all, filter, findOne, customArray, customList };
